@@ -10,6 +10,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -22,7 +23,7 @@ public class SauceDemoTest {
 	
 	@BeforeMethod
 	@Parameters("browser")
-	public void setUp(String browser) {
+	public void setUp(@Optional("chrome")String browser) {
 		if(browser.equals("firefox")) {
 			 driver = new FirefoxDriver();
 		}else if(browser.equals("chrome")) {

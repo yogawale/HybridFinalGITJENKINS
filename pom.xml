@@ -50,6 +50,20 @@
 			<artifactId>log4j-core</artifactId>
 			<version>2.24.3</version>
 		</dependency>
-
 	</dependencies>
+	<build>
+		<plugins>
+			<!-- Update Maven Compiler Plugin to a newer version -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version> <!-- or latest stable version -->
+				<configuration>
+					<source>11</source> <!-- Use your Java version (8, 11, 17, etc.) -->
+					<target>11</target> <!-- Must match <source> -->
+					<encoding>UTF-8</encoding> <!-- Explicitly set encoding -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
