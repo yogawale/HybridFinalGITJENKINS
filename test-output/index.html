@@ -108,12 +108,12 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestLayer.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest(error_user, secret_sauce)">loginTest(error_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestLayer.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest(standard_user, secret_sauce)">loginTest(standard_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestLayer.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest(standard_user, secret_sauce)">loginTest(standard_user, secret_sauce)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="TestLayer.SauceDemoTest" class="method navigator-link" hash-for-method="loginTest(error_user, secret_sauce)">loginTest(error_user, secret_sauce)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,18 +144,18 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginTest(error_user, secret_sauce)">
-                  </a> <!-- loginTest(error_user, secret_sauce) -->
-                  <span class="method-name">loginTest</span>
-                  <span class="parameters">(error_user,secret_sauce)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="loginTest(standard_user, secret_sauce)">
                   </a> <!-- loginTest(standard_user, secret_sauce) -->
                   <span class="method-name">loginTest</span>
                   <span class="parameters">(standard_user,secret_sauce)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginTest(error_user, secret_sauce)">
+                  </a> <!-- loginTest(error_user, secret_sauce) -->
+                  <span class="method-name">loginTest</span>
+                  <span class="parameters">(error_user,secret_sauce)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,7 +171,7 @@
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;TestFire&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;TestLayer.SauceDemoTest&quot;/&gt;
     &lt;/classes&gt;
@@ -217,20 +217,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'loginTest')
 data.setCell(0, 2, 'TestLayer.SauceDemoTest')
-data.setCell(0, 3, 4611);
+data.setCell(0, 3, 11192);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'loginTest')
 data.setCell(1, 2, 'TestLayer.SauceDemoTest')
-data.setCell(1, 3, 3182);
+data.setCell(1, 3, 9385);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'loginTest')
 data.setCell(2, 2, 'TestLayer.SauceDemoTest')
-data.setCell(2, 3, 2461);
+data.setCell(2, 3, 8118);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -258,28 +258,28 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">TestLayer.SauceDemoTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
+                <span class="method-name">setUp(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(standard_user, secret_sauce)</span>
-                <span class="method-start">6474 ms</span>
+                <span class="method-start">15066 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">11092 ms</span>
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">26296 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(error_user, secret_sauce)</span>
-                <span class="method-start">12541 ms</span>
+                <span class="method-start">37460 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">15726 ms</span>
+                <span class="method-name">setUp(firefox)</span>
+                <span class="method-start">45597 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest(visual_user, secret_sauce)</span>
-                <span class="method-start">17260 ms</span>
+                <span class="method-start">57077 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
