@@ -5,6 +5,8 @@
   	<parameter name="browser" value="firefox" />
     <classes>
       <class name="TestLayer.SauceDemoTest"/>
+
+      
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
